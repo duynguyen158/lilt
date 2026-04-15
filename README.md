@@ -15,15 +15,11 @@ This project runs a local-first AI chat stack using [LibreChat](https://www.libr
 
 ### ⚡️ As quick a start at it gets ⚡️
 
-1. Copy the example environment file and fill in any required values:
+1. Run this single command
    ```zsh
-   make setup
+   make setup && make start
    ```
-2. Start all services:
-   ```zsh
-   make start
-   ```
-3. Open LibreChat at [http://localhost:3080](http://localhost:3080).
+2. Open LibreChat at [http://localhost:3080](http://localhost:3080).
 
 To stop all services:
 
