@@ -32,12 +32,15 @@ ignore = [
 # known-third-party = []
 combine-as-imports = true
 
-[tool.pyright]
-venvPath = "."
-venv = "./.venv"
+[tool.ty]
+# Environment settings
+[tool.ty.environment]
+root = ["./lilt", "./tests"]
+
+[tool.ty.analysis]
+allowed-unresolved-imports = []
+replace-imports-with-any = []
+
+[tool.ty.src]
 include = ["lilt", "tests"]
-typeCheckingMode = "strict"
-reportUnknownVariableType = false
-reportUnknownMemberType = false
-reportUnknownLambdaType = false
-reportUnknownArgumentType = false
+respect-ignore-files = true
