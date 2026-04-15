@@ -10,6 +10,8 @@ services:
       - mongodb
       - rag_api
     image: registry.librechat.ai/danny-avila/librechat-dev:latest
+    models:
+      - chat
     restart: always
     user: "${UID}:${GID}"
     extra_hosts:
@@ -81,3 +83,12 @@ services:
 
 volumes:
   pgdata2:
+
+models:
+  chat:
+    model: ai/gemma4:E2B
+    context_size: 32000
+    runtime_flags:
+      - "--threads"
+      - "4"
+      - "--mlock"

@@ -336,17 +336,31 @@ endpoints:
 
   custom:
     # LM Studio
-    - name: "LM Studio"
-      apiKey: "sk-1234"
-      baseURL: "http://host.docker.internal:1234/v1"
+    # Not enabled by default. Uncomment to enable, then add "LM Studio" to ENDPOINTS in .env
+    # - name: "LM Studio"
+    #   apiKey: "not-needed"
+    #   baseURL: "http://host.docker.internal:1234/v1"
+    #   models:
+    #     default:
+    #       - "google/gemma-4-e2b"
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "google/gemma-4-e2b"
+    #   modelDisplayLabel: "LM Studio"
+    #   iconURL: https://lmstudio.ai/assets/marketing/lmstudio-app-logo.webp
+
+    # Docker
+    - name: "Docker"
+      apiKey: "not-needed"
+      baseURL: "http://model-runner.docker.internal/v1"
       models:
         default:
-          - "google/gemma-4-e2b"
+          - "ai/gemma4:E2B"
         fetch: false
       titleConvo: true
-      titleModel: "google/gemma-4-e2b"
-      modelDisplayLabel: "LM Studio"
-      iconURL: https://lmstudio.ai/assets/marketing/lmstudio-app-logo.webp
+      titleModel: "ai/gemma4:E2B"
+      modelDisplayLabel: "Docker"
+      iconURL: "https://docs.docker.com/assets/images/favicon-192x192.png"
 
     # # Groq Example
     # - name: 'groq'
