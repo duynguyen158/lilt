@@ -26,8 +26,8 @@ install-python: # Install Python packages
 	uv sync --all-groups
 	uv tool install ruff --upgrade
 	uvx ruff --version
-	uv tool install pyright --upgrade
-	uvx pyright --version
+	uv tool install ty --upgrade
+	uvx ty --version
 
 install: install-terraform install-python # Install all dependencies
 
@@ -49,7 +49,7 @@ lint-terraform: # Validate Terraform code
 	@echo "Terraform infrastructure-as-code is not enabled in this project."
 
 lint-python: # Check for Python type errors
-	uv tool run pyright
+	uv tool run ty check
 
 lint: lint-terraform lint-python # Lint (validate) all code
 

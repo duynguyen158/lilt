@@ -44,7 +44,7 @@ Here, "linting" refers to the process of static-type checking in Python and (if 
 make lint
 ```
 
-We use [Pyright](https://github.com/microsoft/pyright) as the Python static type checker. Rules are also specified in `pyproject.toml`.
+We use [ty](https://github.com/microsoft/ty) as the Python static type checker. Rules are also specified in `pyproject.toml`.
 
 ## Deployment
 **TODO: Describe how your project is deployed.**

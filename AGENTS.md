@@ -3,14 +3,14 @@
 ## Project Overview
 Local-first stack to chat with your documents, the agentic way.
 
-This is a Python project created from a cookiecutter template. It uses modern tooling including `uv` for dependency management, `ruff` for formatting, and `pyright` for static type checking.
+This is a Python project created from a cookiecutter template. It uses modern tooling including `uv` for dependency management, `ruff` for formatting, and `ty` for static type checking.
 
 ## Development Commands
 When working on this project, use these commands via the `Makefile`:
 
 - **Environment Setup**: `make setup` (Installs dependencies and sets up the virtual environment).
 - **Format Code**: `make format` (Runs `ruff` to format code).
-- **Lint/Type Check**: `make lint` (Runs `pyright` and other static analysis).
+- **Lint/Type Check**: `make lint` (Runs `ty` and other static analysis).
 - **Run Tests**: `make test` (Runs the test suite).
 
 ## Agent Workflow
@@ -24,12 +24,12 @@ If either command returns an error or warning, you must fix the issues before co
 ## Project Structure
 - `src/`: Main source code directory.
 - `tests/`: Project test suite.
-- `pyproject.toml`: Project configuration for `uv`, `ruff`, and `pyright`.
+- `pyproject.toml`: Project configuration for `uv`, `ruff`, and `ty`.
 - `Makefile`: Entry point for all development tasks.
 
 ## Technical Guidance
 - **Dependency Management**: Use `uv` commands (e.g., `uv add <package>`) to modify dependencies, then run `make setup`.
-- **Typing**: The project uses strict type checking with `pyright`. Ensure all new code has proper type hints.
+- **Typing**: The project uses strict type checking with `ty`. Ensure all new code has proper type hints.
 - **Formatting**: `ruff` is used for both linting and formatting. Always run `make format` before completing a task.
 - **System Dependencies**:
   - This project uses `nix` and `direnv`. System-level packages should be added to `shell.nix`.
