@@ -18,3 +18,10 @@ __pycache__
 # .env examples
 !.env.example
 !.envrc.example
+
+# LibreChat
+logs/
+data-node/
+images/
+meili_data_*/
+uploads/

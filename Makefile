@@ -29,12 +29,15 @@ install-python: # Install Python packages
 	uv tool install ty --upgrade
 	uvx ty --version
 
-install: install-terraform install-python # Install all dependencies
+install-env: # Install environment variables
+	cp .env.example .env
+
+install: install-terraform install-python install-env # Install all dependencies
 
 setup: login install # Setup the project
 
 # DEVELOPMENT
-.PHONY: format format-% lint lint-% test test-%
+.PHONY: format format-% lint lint-% test test-% start stop
 
 format-terraform: # Format Terraform code
 	@echo "Terraform infrastructure-as-code is not enabled in this project."
@@ -57,5 +60,11 @@ test-python: # Run Python tests
 	uv run pytest
 
 test: test-python # Run all tests
+
+start: # Start all services
+	docker compose --profile chat up -d
+
+stop: # Stop all services
+	docker compose down
 
 # DEPLOYMENT
