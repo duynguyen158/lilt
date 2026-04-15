@@ -7,7 +7,9 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">= 3.13"
-dependencies = []
+dependencies = [
+    "python-documentcloud>=4.5.0",
+]
 
 [dependency-groups]
 dev = [
