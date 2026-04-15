@@ -13,7 +13,7 @@ This project runs a local-first AI chat stack using [LibreChat](https://www.libr
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) with Model Runner enabled
 - [uv](https://docs.astral.sh/uv/)
 
-### Quick start
+### ⚡️ As quick a start at it gets ⚡️
 
 1. Copy the example environment file and fill in any required values:
    ```zsh
