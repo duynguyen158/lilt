@@ -62,9 +62,9 @@ test-python: # Run Python tests
 test: test-python # Run all tests
 
 start: # Start all services
-	docker compose --profile chat up -d
+	docker compose -p lilt --profile chat up -d
 
 stop: # Stop all services
-	docker compose down
+	docker compose -p lilt down
 
 # DEPLOYMENT
