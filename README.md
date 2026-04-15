@@ -2,7 +2,9 @@
 
 [![Python version](https://img.shields.io/badge/python_version-3.13-blue)](https://github.com/psf/black)
 
-Local-first stack to chat with your documents, the agentic way.
+Local-first, open-source stack to chat with your documents, the agentic way.
+
+This is a simplified version of what powered much of The New York Times's coverage of [3 million pages of Epstein files](https://www.nytimes.com/spotlight/epstein-files) in early 2026.
 
 ## Usage
 
