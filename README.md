@@ -12,7 +12,7 @@ This project runs a local-first AI chat stack using [LibreChat](https://www.libr
 
 ### Prerequisites
 
-- You use a MacBook, M1 or above. I'm using a MacBook M1 Air with 16 GB of RAM.
+- You use a MacBook, M1 or above. I'm using a MacBook M1 Air with 16 GB of RAM, so you should probably be good :)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) with Model Runner enabled
 - [uv](https://docs.astral.sh/uv/)
 
