@@ -37,12 +37,12 @@ combine-as-imports = true
 [tool.ty]
 # Environment settings
 [tool.ty.environment]
-root = ["./lilt", "./tests"]
+root = ["./lilt", "./tests", "./scripts"]
 
 [tool.ty.analysis]
 allowed-unresolved-imports = []
 replace-imports-with-any = []
 
 [tool.ty.src]
-include = ["lilt", "tests"]
+include = ["lilt", "tests", "scripts"]
 respect-ignore-files = true
