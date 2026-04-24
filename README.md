@@ -4,8 +4,6 @@
 
 Local-first, open-source stack to chat with your documents, the agentic way.
 
-This is a simplified version of a system that powered much of The New York Times's coverage of [3 million pages of Epstein files](https://www.nytimes.com/spotlight/epstein-files) in early 2026.
-
 ## Usage
 
 This project runs a local-first AI chat stack using [LibreChat](https://www.librechat.ai/) as the UI and [Docker Model Runner](https://docs.docker.com/desktop/features/model-runner/) to serve models locally.
